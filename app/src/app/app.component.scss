@@ -1,11 +1,11 @@
 .main-container {
   height: 100vh;
-  width: 100vw;
   display: flex;
   flex-direction: column;
-  background-color: #141d6c;
+  background-color: #070c34;
   margin: 0px;
   padding: 0px;
+  row-gap: 50px;
 
   a {
     text-decoration: None;
@@ -16,15 +16,27 @@
     justify-content: space-evenly;
     width: 100%;
     border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+    background-color: #101d80;
+    font-family: "Roboto Slab", serif;
+    font-size: 20px;
   }
 
   nav > .nav-section {
     display: flex;
+    align-items: center;
     padding: 1rem 1rem;
     gap: 1rem;
+
+    a {
+      display: flex;
+      text-decoration: None;
+      p {
+        margin: 10px;
+      }
+    }
   }
   #contact {
-    margin-left: 1000px;
+    margin-left: 15%;
   }
 
   body {
