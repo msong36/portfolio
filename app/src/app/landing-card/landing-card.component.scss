@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "RobotoSlab-Bold";
+  src: url(/app/assets/fonts/static/RobotoSlab-Bold.ttf);
+}
+
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .main-text {
+    justify-content: center;
+    font: "RobotoSlab-Bold";
+  }
+}
