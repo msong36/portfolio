@@ -1,5 +1,4 @@
 .main-container {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: #070c34;
@@ -8,6 +7,19 @@
   row-gap: 50px;
 
   a {
+    text-decoration: None;
+  }
+  a:visited {
+    text-decoration: None;
+  }
+  a:hover {
+    text-decoration: None;
+  }
+  a:focus {
+    text-decoration: None;
+  }
+  a:focus,
+  a:hover {
     text-decoration: None;
   }
 
@@ -38,15 +50,8 @@
   #contact {
     margin-left: 15%;
   }
-
-  body {
-    background-color: #141d6c;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    overflow: hidden;
-    border: 5px solid red;
-    margin: 0px;
-    padding: 0px;
+  .divider {
+    height: 500px;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.1);
   }
 }
