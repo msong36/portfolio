@@ -1,7 +1,7 @@
 .main-container {
   display: flex;
   flex-direction: column;
-  background-color: #070c34;
+  background-color: var(--background-color);
   margin: 0px;
   padding: 0px;
   row-gap: 50px;
@@ -27,8 +27,7 @@
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    border-bottom: 1px solid rgb(255, 255, 255, 0.1);
-    background-color: #101d80;
+    border-bottom: 1px solid var(--line);
     font-family: "Roboto Slab", serif;
     font-size: 20px;
   }
@@ -38,8 +37,10 @@
     align-items: center;
     padding: 1rem 1rem;
     gap: 1rem;
+    border-left: 1px solid var(--line);
 
     a {
+      color: var(--accent-bright);
       display: flex;
       text-decoration: None;
       p {
@@ -51,7 +52,11 @@
     margin-left: 15%;
   }
   .divider {
-    height: 500px;
-    border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+    height: 100vh;
+    border-bottom: 1px solid var(--line);
+  }
+  .line {
+    height: 10vh;
+    border-bottom: 1px solid var(--line);
   }
 }

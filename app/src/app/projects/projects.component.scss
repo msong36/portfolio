@@ -2,9 +2,14 @@
   display: flex;
   flex-direction: column;
   justify-items: center;
-  height: 1000px;
-  background-color: #101b6b;
+  min-height: 100vh;
   margin: auto;
+  padding-bottom: 7%;
+  padding-right: 2%;
+  padding-right: 2%;
+  //border: 1px solid var(--accent-dark);
+  //box-shadow: 1px 1px 1px var(--accent-dark);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   width: 90%;
   border-radius: 25px;
   font-family: "Roboto Slab", serif;
@@ -12,7 +17,7 @@
   h1 {
     text-align: center;
     font-size: 10vh;
-    color: white;
+    color: var(--accent-dark);
     margin-top: 0px;
     padding-top: 0px;
   }
@@ -21,26 +26,40 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 15px;
+    row-gap: 10vh;
     .project {
       display: flex;
       flex-direction: column;
-      background-color: #535b96;
-      width: 45%;
+      background-color: var(--accent-tile);
+      width: 25%;
+      min-height: 100px;
       margin: auto;
       padding: 15px;
       border-radius: 15px;
       padding-left: 20px;
       gap: 15px;
+      box-shadow: 0.2vw 0.2vh var(--accent-dark);
+      user-select: None;
+      cursor: pointer;
       .name {
-        color: white;
+        color: var(--accent-dark);
         font-weight: 400;
-        border: 1px solid green;
       }
       .description {
-        color: white;
-        font-weight: 200;
-        border: 1px solid red;
+        color: var(--accent-bright);
+        font-weight: 300;
       }
+    }
+
+    .project:hover {
+      transform: translate(-0.1vw, -0.1vh);
+      box-shadow: 0.3vw 0.3vh var(--accent-dark);
+      transition: all 0.2s ease-in-out;
+    }
+    .project:hover:active {
+      transform: translate(0.2vw, 0.2vh);
+      box-shadow: 0vw 0vh var(--accent-dark);
+      transition: all 0.05s linear;
     }
   }
 }

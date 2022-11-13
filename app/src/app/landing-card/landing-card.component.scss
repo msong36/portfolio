@@ -11,15 +11,17 @@
     max-height: 5%;
     justify-content: center;
     font-family: "Roboto Slab", serif;
-    color: white;
+    color: var(--accent-dark);
     font-size: 13vh;
     display: flex;
     flex-direction: row;
   }
 
-  .main-text::selection {
-    background: mintcream;
-    color: #0f1965;
-    text-shadow: 5px 7px 7px pink;
+  .main-text::-webkit-selection {
+    //background: var(--accent-dark);
+    //color: var(--accent-bright);
+    //text-shadow: 5px 7px 7px pink;
+    background: white;
+    color: black;
   }
 }
