@@ -62,4 +62,20 @@
       transition: all 0.05s linear;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .h1 {
+      padding-bottom: 0px;
+    }
+    .project-table {
+      flex-direction: column;
+      padding: None;
+      margin: auto;
+      row-gap: 20px;
+
+      .project {
+        width: 50%;
+      }
+    }
+  }
 }

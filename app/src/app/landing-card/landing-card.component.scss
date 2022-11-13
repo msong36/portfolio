@@ -47,4 +47,17 @@
       opacity: 1;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .main-text {
+      font-size: 7vh;
+      margin: auto;
+      padding: 0px;
+      font-family: "Roboto Slab", serif;
+    }
+
+    .tracking-in-expand {
+      animation: none 0s;
+    }
+  }
 }
