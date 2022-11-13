@@ -25,7 +25,8 @@
 
   nav {
     display: flex;
-    justify-content: space-evenly;
+    //justify-content: space-evenly;
+    //justify-content: center;
     width: 100%;
     border-bottom: 1px solid var(--line);
     font-family: "Roboto Slab", serif;
@@ -35,9 +36,11 @@
   nav > .nav-section {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     padding: 1rem 1rem;
     gap: 1rem;
     border-left: 1px solid var(--line);
+    flex-basis: calc(100% / 3);
 
     a {
       color: var(--accent-bright);
@@ -49,8 +52,9 @@
     }
   }
   #contact {
-    margin-left: 15%;
+    justify-content: center;
   }
+
   .divider {
     height: 100vh;
     border-bottom: 1px solid var(--line);
