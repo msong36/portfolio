@@ -19,3 +19,19 @@ body {
 * {
   box-sizing: border-box;
 }
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-tile);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-bright);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: var(--accent-dark);
+}
