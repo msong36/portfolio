@@ -3,8 +3,8 @@
     <p>Projects</p>
   </h1>
 
-  <div class="project-table">
-    <div class="project" id="huffman">
+  <div id="table" class="project-table">
+    <!--div class="project" id="huffman" (click)="testFunc()">
       <div class="name">Huffman Compression Algorithm Implementation</div>
       <div class="description">Lossless data compression algorithm implementation in C</div>
     </div>
@@ -36,6 +36,19 @@
       <div class="description">
         This website
       </div>
+    </div-->
+
+    <div id="target"></div>
+
+    <div input="button" *ngFor="let project of projects" class="project" (click)="tileClick(project.id)">
+      <a [title]="project.name + ' details'" id="project.id">
+        <div class="name">
+          {{ project.name }}
+        </div>
+        <div class="description">
+          {{ project.description }}
+        </div>
+      </a>
     </div>
 
 
