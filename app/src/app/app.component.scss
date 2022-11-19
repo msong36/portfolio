@@ -59,12 +59,16 @@
   }
 
   .divider {
-    height: 100vh;
+    height: 10vh;
     border-bottom: 1px solid var(--line);
   }
   .line {
     height: 10vh;
     border-bottom: 1px solid var(--line);
+  }
+
+  #project-grid {
+    width: 100vw;
   }
 
   @media screen and (max-width: 768px) {

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { delay } from 'rxjs';
 import { projects } from '../projects/projects';
 
 @Component({
@@ -21,21 +22,24 @@ export class ProjectsComponent implements OnInit {
 
   tileClick (id : number){
     switch (id) {
+      case 0: {
+        break;
+      }
       case 5: {
         window.scrollTo(0, 0);
         break;
       }
-      default: {
+      /*default: {
         //alert ("id for " + id + " received");
         document.getElementById(id.toString())?.classList.add("slide-in-right");
           let table = document.getElementById('target') as HTMLInputElement;
         var property = projects[id].name;
         alert(JSON.stringify(property));
 
-        table.innerHTML = "HELLO";
+        //table.innerHTML = "HELLO";
         //table?.classList.add('bg-yellow');
         break;
-      }
+      }*/
     }
   }
 
