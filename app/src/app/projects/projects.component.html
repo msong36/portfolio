@@ -3,41 +3,7 @@
     <p>Projects</p>
   </h1>
 
-  <div id="table" class="project-table">
-    <!--div class="project" id="huffman" (click)="testFunc()">
-      <div class="name">Huffman Compression Algorithm Implementation</div>
-      <div class="description">Lossless data compression algorithm implementation in C</div>
-    </div>
-    <div class="project" id="bigint">
-      <div class="name">Big Integer</div>
-      <div class="description">
-        Big integer arithmetic implementation in C++
-      </div>
-    </div>
-    <div class="project" id="clearance">
-      <div class="name">UCSC Clearance Badge Generator</div>
-      <div class="description">
-        Discord Bot that generates UCSC clearance badges with valid date/time and scannable data matrices
-      </div>
-    </div>
-    <div class="project" id="nano">
-      <div class="name">
-        Nano - Haskell Subset Interpreter
-      </div>
-      <div class="description">
-        Haskell subset interpreter that supports scoping, binding, environments and closures, type checking, type
-        ineference, and polymorphism.
-      </div>
-    </div>
-    <div input="button" class="project" id="website" onclick="location.href='#'">
-      <div class="name">
-        Portfolio Website
-      </div>
-      <div class="description">
-        This website
-      </div>
-    </div-->
-
+  <!--div id="table" class="project-table">
     <div id="target"></div>
 
     <div input="button" *ngFor="let project of projects" class="project" (click)="tileClick(project.id)">
@@ -49,6 +15,90 @@
           {{ project.description }}
         </div>
       </a>
+    </div>
+  </div-->
+
+  <div class="content-container">
+    <div class="toc">
+      <div class="title">Table of Contents</div>
+      <div class="list">
+        <ul>
+          <a href="#huffman">
+            <li>Huffman Encoding</li>
+          </a>
+          <a href="#big">
+            <li>Big Integer</li>
+          </a>
+          <a href="#clearance">
+            <li>Clearance Badge Generator</li>
+          </a>
+          <a href="#nano">
+            <li>Nano</li>
+          </a>
+          <a href="#portfolio">
+            <li>Portfolio site</li>
+          </a>
+        </ul>
+      </div>
+    </div>
+    <div class="project-window">
+      <div class="project" id="huffman">
+        <div class="title">Huffman Encoding</div>
+
+        <div class="description">
+          <div class="text">
+            <ul>
+              <li>
+                Huffman Compression Algorithm Implementation in C
+              </li>
+              <li>
+                Calculates frequency of each byte in a file, dynamically creating a binary search tree for compression
+              </li>
+              <li>
+                Tracks file's size before and after to track space-saving, with an average of 30% space saved
+              </li>
+            </ul>
+          </div>
+          <div class="images">
+            <video autoplay muted loop>
+              <source src="../assets/videos/huffman-poem.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="project" id="big">
+        <div class="title">Big Integer</div>
+        <div class="text">
+
+        </div>
+        <div class="images"></div>
+      </div>
+      <div class="project" id="clearance">
+        <div class="title">Clearance Badge Generator</div>
+        <div class="text">
+
+        </div>
+        <div class="images"></div>
+      </div>
+      <div class="project" id="nano">
+        <div class="title">Nano</div>
+        <div class="text">
+
+        </div>
+        <div class="images"></div>
+      </div>
+      <div class="project" id="portfolio">
+        <div class="title">Portfolio Site</div>
+        <div class="text">
+
+        </div>
+        <div class="images"></div>
+      </div>
+
+
     </div>
   </div>
 
